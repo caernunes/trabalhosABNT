@@ -1,0 +1,27 @@
+/* CitacoesDocumentos.css */
+.app-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .app-header {
+    margin-bottom: 40px;
+  }
+  
+  .app-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .app-header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .file-upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  

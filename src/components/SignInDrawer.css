@@ -1,0 +1,25 @@
+.drawer-content {
+  width: 100%;
+  padding: 20px;
+}
+
+.drawer-content button {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .drawer-content {
+    width: 500px;
+  }
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

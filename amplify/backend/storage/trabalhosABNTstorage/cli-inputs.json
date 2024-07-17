@@ -1,0 +1,18 @@
+{
+  "resourceName": "trabalhosABNTstorage",
+  "policyUUID": "74f3f039",
+  "bucketName": "trabalhosabntcd0eea59db2942a7832ed7662bc61886",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

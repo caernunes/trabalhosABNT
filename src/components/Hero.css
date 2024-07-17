@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .hero {
+      height: auto;
+      padding: 20px 10px;
+    }
+  
+    .hero h2 {
+      font-size: 1.75rem;
+    }
+  
+    .hero h6 {
+      font-size: 1rem;
+    }
+  
+    .hero-button {
+      font-size: 0.875rem;
+      padding: 10px 20px;
+    }
+  }
+  

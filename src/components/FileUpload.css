@@ -1,0 +1,74 @@
+.file-upload {
+    text-align: center;
+  }
+  
+  .dropzone {
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    padding: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropzone.active {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .upload-button {
+    background-color: #FF4136;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .upload-button:hover {
+    background-color: #FF6347;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 123, 255, 0.3);
+    color: #007BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+    pointer-events: none;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .register-prompt {
+    color: red;
+    margin-top: 10px;
+  }
+  
