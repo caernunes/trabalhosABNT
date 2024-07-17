@@ -9,10 +9,15 @@ export default function ThemeToggleButton() {
   const colorMode = useContext(ColorModeContext);
   const theme = useTheme();
 
+  console.log('ThemeToggleButton rendered with theme mode:', theme.palette.mode);
+
   return (
     <IconButton
       sx={{ ml: 1 }}
-      onClick={colorMode.toggleColorMode}
+      onClick={() => {
+        console.log('ThemeToggleButton clicked');
+        colorMode.toggleColorMode();
+      }}
       color="inherit"
       aria-label="toggle light and dark mode"
     >

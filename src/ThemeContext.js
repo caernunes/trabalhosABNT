@@ -9,7 +9,12 @@ export default function ToggleColorMode({ children }) {
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        console.log('toggleColorMode called');
+        setMode((prevMode) => {
+          const newMode = prevMode === 'light' ? 'dark' : 'light';
+          console.log(`Mode changed from ${prevMode} to ${newMode}`);
+          return newMode;
+        });
       },
     }),
     [],
@@ -24,6 +29,8 @@ export default function ToggleColorMode({ children }) {
       }),
     [mode],
   );
+
+  console.log(`ThemeProvider initialized with mode: ${mode}`);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

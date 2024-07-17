@@ -17,6 +17,8 @@ export default function Navbar() {
     setSignInDrawerOpen(open);
   };
 
+  console.log('Navbar component rendered');
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" className="navbar">

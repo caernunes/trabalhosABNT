@@ -9,30 +9,27 @@ import Navbar from './components/Navbar';
 import Breadcrumbs from './components/Breadcrumbs';
 import Footer from './components/Footer';
 import ToggleColorMode from './ThemeContext';
-import { CssBaseline, ThemeProvider, useTheme } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 
 function App() {
-  const theme = useTheme();
-
+  console.log('App component rendered');
   return (
     <ToggleColorMode>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-          <Navbar />
-          <Breadcrumbs />
-          <SignInDrawer />
-          <div style={{ flex: 1 }}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/trabalhos-academicos" element={<TrabalhosAcademicos />} />
-              <Route path="/citacoes-documentos" element={<CitacoesDocumentos />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
-          <Footer />
+      <CssBaseline />
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Navbar />
+        <Breadcrumbs />
+        <SignInDrawer />
+        <div style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/trabalhos-academicos" element={<TrabalhosAcademicos />} />
+            <Route path="/citacoes-documentos" element={<CitacoesDocumentos />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </div>
-      </ThemeProvider>
+        <Footer />
+      </div>
     </ToggleColorMode>
   );
 }
